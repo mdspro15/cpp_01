@@ -8,4 +8,6 @@ Then implement two functions
   It creates a zombie, name it, and return it so you can use it outside of the function scope.
 + **void randomChump(std::string name)** <br>
   It creates a zombie name it, and zombie announces itself.
-We can learn about ```stack vs heap```, ```new``` and ```delete```.
+We can learn about ```stack vs heap```, ```new``` and ```delete```. <br>
+Use the stack when your variable will not be used after the current function returns <br>
+Use the heap when the data in the variable is needed beyond the lifetime of the current function.
