@@ -15,9 +15,10 @@ Dynamic allocated memory is allocated on **Heap**, and non-static and local vari
 + C uses the ```malloc()```and ```calloc()``` function to allocate memory dynamically at run times and uses ```free()``` to free dynamically allocated memory.
 + C++ uses ```new``` operator to allocate memory and ```delete``` to free memory. <br>
 
-**Syntax to use new operator**
+**Syntax to use new and delete operator**
 ```
 pointer_valiable = new data_type;
+delete pointer_variable
 ```
 Data type could be any built-in date type including array or any user-defined data type such as structure and class. <br>
 **Example**
@@ -29,11 +30,11 @@ int main()
 {
   int *p = new int;
 
-  *ptr = 10 //assigning value using dereference operator
+  *p = 10 //assigning value using dereference operator
 
   cout << "Address: " << ptr << endl;
   cout << "Value: " << *ptr;
-
+  delete p;
   return 0;
 }
 ```
@@ -44,13 +45,16 @@ Address: 0x162bc20
 Value: 10
 ```
 
-**Allocate a block of memory**
+**Allocate a block of memory** <br>
 A new operaor is also used to allocate a block of memory of type data type.
 ```
 pointer_variable = new data_type[size];
+delete[] pointer_variable;
 
 int *p = new int[10];
+delete[] p;
 ```
-Dynamically allocates memory for 10 integers continuously of type int and returns a pointer to the first element of sequence which is p[0].
+Dynamically allocates memory for 10 integers continuously of type int and returns a pointer to the first element of sequence which is p[0]. <br>
+
 Use the stack when your variable will not be used after the current function returns <br>
 Use the heap when the data in the variable is needed beyond the lifetime of the current function.
