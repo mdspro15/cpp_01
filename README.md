@@ -22,12 +22,26 @@ pointer_valiable = new data_type;
 Data type could be any built-in date type including array or any user-defined data type such as structure and class. <br>
 **Example**
 ```
-int *p = NULL;
-p = new int;
+#include <iostream>
+#include <memory>
 
-or
+int main()
+{
+  int *p = new int;
 
-int *p = new int;
+  *ptr = 10
+
+  cout << "Address: " << ptr << endl;
+  cout << "Value: " << *ptr;
+
+  return 0;
+}
+```
+
+**Output**
+```
+Address: 0x162bc20
+Value: 10
 ```
 Use the stack when your variable will not be used after the current function returns <br>
 Use the heap when the data in the variable is needed beyond the lifetime of the current function.
