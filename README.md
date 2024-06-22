@@ -11,6 +11,8 @@ Then implement two functions
 We can learn about ```stack vs heap```, ```new``` and ```delete```. <br>
 
 ## Dynamic Memory Allocation
-Dynamic allocated memory is allocated on **Heap**, and non-static and local variables get memory allocated on **Stack**. For normal variables like ```int a```,```char str[10]``` etc, memory is automatically allocated and deallocated. For dynamically allocated memory like ```int *p = new int[10]```, it is the programmer's responsibility to deallocate memory when no longer needed. If you didn't deallocate, it will cause **memory leak**
+Dynamic allocated memory is allocated on **Heap**, and non-static and local variables get memory allocated on **Stack**. For normal variables like ```int a```,```char str[10]``` etc, memory is automatically allocated and deallocated. For dynamically allocated memory like ```int *p = new int[10]```, it is the programmer's responsibility to deallocate memory when no longer needed. If you didn't deallocate, it will cause **memory leak** <br>
++ C uses the ```malloc()```and ```calloc()``` function to allocate memory dynamically at run times and uses ```free()``` to free dynamically allocated memory.
++ C++ uses ```new``` operator to allocate memory and ```delete``` to free memory. <br>
 Use the stack when your variable will not be used after the current function returns <br>
 Use the heap when the data in the variable is needed beyond the lifetime of the current function.
