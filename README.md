@@ -29,7 +29,7 @@ int main()
 {
   int *p = new int;
 
-  *ptr = 10
+  *ptr = 10 //assigning value using dereference operator
 
   cout << "Address: " << ptr << endl;
   cout << "Value: " << *ptr;
@@ -43,5 +43,14 @@ int main()
 Address: 0x162bc20
 Value: 10
 ```
+
+**Allocate a block of memory**
+A new operaor is also used to allocate a block of memory of type data type.
+```
+pointer_variable = new data_type[size];
+
+int *p = new int[10];
+```
+Dynamically allocates memory for 10 integers continuously of type int and returns a pointer to the first element of sequence which is p[0].
 Use the stack when your variable will not be used after the current function returns <br>
 Use the heap when the data in the variable is needed beyond the lifetime of the current function.
