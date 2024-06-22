@@ -19,6 +19,15 @@ Dynamic allocated memory is allocated on **Heap**, and non-static and local vari
 ```
 pointer_valiable = new data_type;
 ```
-Data type could be any built-in date type including array or any user-defined data type such as structure and class.
+Data type could be any built-in date type including array or any user-defined data type such as structure and class. <br>
+**Example**
+```
+int *p = NULL;
+p = new int;
+
+or
+
+int *p = new int;
+```
 Use the stack when your variable will not be used after the current function returns <br>
 Use the heap when the data in the variable is needed beyond the lifetime of the current function.
