@@ -56,5 +56,6 @@ delete[] p;
 ```
 Dynamically allocates memory for 10 integers continuously of type int and returns a pointer to the first element of sequence which is p[0]. <br>
 
+**Heap and Stack** <br>
 Use the stack when your variable will not be used after the current function returns <br>
 Use the heap when the data in the variable is needed beyond the lifetime of the current function.
