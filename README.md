@@ -5,7 +5,8 @@ We will be learning the basic of memory allocation in c++, references, pointers 
 We will have to implement ```Zombie```class with a string private attribute **name** as well as member function **void annouce(void)** to announce themselves.<br>
 Then implement two functions 
 + **Zombie*newZombie(std::string name)** <br>
-  It creates a zombie, name it, and return it so you can use it outside of the function scope.
+  It creates a zombie, name it, and return it so you can use it outside of the function scope. <br>
+  ->It means create a function that returns a pointer to class and it should be allocated on heap (using ```new```) and will live until you call ```delete```on it. 
 + **void randomChump(std::string name)** <br>
   It creates a zombie name it, and zombie announces itself.<br>
 We can learn about ```stack vs heap```, ```new``` and ```delete```. <br>
