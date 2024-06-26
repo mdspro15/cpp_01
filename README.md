@@ -127,8 +127,15 @@ int foo;
 
 var = 7;
 foo = 21;
-ptr = &var
---> Pointer points to "var" variable and contains memory address of "var" variable. To get value from what pointer points to, use * operator.
-    if print *ptr, it will display 7.
+ptr = &var;
+--> Pointer points to "var" variable and contains memory address of "var" variable. To get value from what pointer points to
+    use * operator. If print *ptr, it will display 7.
+
+ptr = &foo;
+--> Pointer can re-assign to "foo" variable. If print *ptr, it will display 21 this time.
+
+int &ref = var;
+--> ref is going to be same thing as var, if we print ref, value is same as var which is 7.
+    because ref and var are 2 ways to reference this same variable.
 ```
 
