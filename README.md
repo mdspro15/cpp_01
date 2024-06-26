@@ -13,14 +13,14 @@ We can learn about ```stack vs heap```, ```new``` and ```delete```. <br>
 
 # Stack and Heap Memory 
 To understand what is stack and heap memory, this link in below helps me to understand what happened on memory behind when code is being executed. <br> 
-https://courses.engr.illinois.edu/cs225/sp2022/resources/stack-heap/
+https://courses.engr.illinois.edu/cs225/sp2022/resources/stack-heap/ <br>
 According to this article, each running program has its own memory layout, separated from other programs. The layout consists of a lot of segments including <br>
 + **Stack** : stores local variables
 + **Heap** : dynamic memory for programmer to allocate
 + **Data** : stores global variables, separated into initialized and uninitialized
 + **Text** : stores the code being executed <br>
 
-In order to pinpoint each memory location in program's memory, we assign each byte of memory an "address". The addresses go from 0 all the way to the largest possible address. The text, data and heap segments have low address numbers while the stack memory has higher. <br>
+Each byte of memory has an "address". The addresses go from 0 all the way to the largest possible address. The text, data and heap segments have low address numbers while the stack memory has higher. <br>
 
 
 
