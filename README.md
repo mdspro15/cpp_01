@@ -12,14 +12,17 @@ Then implement two functions
 We can learn about ```stack vs heap```, ```new``` and ```delete```. <br>
 
 # Stack and Heap Memory 
-Each running program has its own memory layout, separated from other programs. The layout consists of a lot of segments including <br>
+To understand what is stack and heap memory, this link in below helps me to understand what happened on memory behind when code is being executed. <br> 
+https://courses.engr.illinois.edu/cs225/sp2022/resources/stack-heap/
+According to this article, each running program has its own memory layout, separated from other programs. The layout consists of a lot of segments including <br>
 + **Stack** : stores local variables
 + **Heap** : dynamic memory for programmer to allocate
 + **Data** : stores global variables, separated into initialized and uninitialized
 + **Text** : stores the code being executed <br>
+
 In order to pinpoint each memory location in program's memory, we assign each byte of memory an "address". The addresses go from 0 all the way to the largest possible address. The text, data and heap segments have low address numbers while the stack memory has higher. <br>
 
-https://courses.engr.illinois.edu/cs225/sp2022/resources/stack-heap/
+
 
 ## Stack
 When a new local variables is declared, more stack memory is allocated for that function to store the variables. After the function returns, the stack memory of this function is **deallocated automatically** and all local variables become invalid. There is no guarantee that the value stored in those area will stay the same. A common mistake is to return a pointer to a stack variable in a helper function. After the caller gets this pointer the invalid stack memory can be overwritten at anytime.
