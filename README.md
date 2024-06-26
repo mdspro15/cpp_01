@@ -116,3 +116,19 @@ delete[] p;
 ```
 Dynamically allocates memory for 10 integers continuously of type int and returns a pointer to the first element of sequence which is p[0]. <br>
 
+# Ex02 HI THIS IS BRAIN
+We will have to learn about the differences between pointer and reference. <br>
++ **Pointer** : This is a variable that holds memory address of another variable. A pointer needs to be dereferenced with ```*``` operator to access that memory location.
++ **Reference** : Another name for an already existing variable. Once a reference is initialized to a variable, it cannot be changed to refer to another variable.
+```
+int *ptr;
+int var;
+int foo;
+
+var = 7;
+foo = 21;
+ptr = &var
+--> Pointer points to "var" variable and contains memory address of "var" variable. To get value from what pointer points to, use * operator.
+    if print *ptr, it will display 7.
+```
+
