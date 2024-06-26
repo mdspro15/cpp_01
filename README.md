@@ -103,6 +103,7 @@ Value: 10
 We will learn how to create class objects of array on heap. <br>
 We will have to implement following function. <br>
 ```Zombie* zombieHorde(int N, std::string name);```
+It must allocate N Zombie objects in a single allocation then it has to initialize zombie, giving each one of them the name passed as parameter and returns pointer to point to first zombie. In main(), call member function **annouce()**.
 
 **Allocate a block of memory** <br>
 A new operaor is also used to allocate a block of memory of type data type.
