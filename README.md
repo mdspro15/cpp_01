@@ -17,10 +17,29 @@ Each running program has its own memory layout, separated from other programs. T
 + **Heap** : dynamic memory for programmer to allocate
 + **Data** : stores global variables, separated into initialized and uninitialized
 + **Text** : stores the code being executed <br>
-In order to pinpoint each memory location in program's memory, we assign each byte of memory an "address". The addresses go from 0 all the way to the largest possible address. The text, data and heap segments have low address numbers while the stack memory has higher.
+In order to pinpoint each memory location in program's memory, we assign each byte of memory an "address". The addresses go from 0 all the way to the largest possible address. The text, data and heap segments have low address numbers while the stack memory has higher. <br>
+
+https://courses.engr.illinois.edu/cs225/sp2022/resources/stack-heap/
 
 ## Stack
-When a new local variables is declared, more stack memory is allocated for that function to store the variables. After the function returns, the stack memory of this function is **deallocated automatically** and all local variables become invalid.
+When a new local variables is declared, more stack memory is allocated for that function to store the variables. After the function returns, the stack memory of this function is **deallocated automatically** and all local variables become invalid. There is no guarantee that the value stored in those area will stay the same. A common mistake is to return a pointer to a stack variable in a helper function. After the caller gets this pointer the invalid stack memory can be overwritten at anytime.
+```
+Cube *Createcube()
+{
+  Cube c(20);
+  return &c;
+}
+
+int main()
+{
+  Cube *c = Createcube();
+  double r = c->getVolume();
+  double v = c->getSurfaceArea();
+  return 0;
+}
+```
+
+
 ## Dynamic Memory Allocation
 Dynamic allocated memory is allocated on **Heap**, and non-static and local variables get memory allocated on **Stack**. For normal variables like ```int a```,```char str[10]``` etc, memory is automatically allocated and deallocated. For dynamically allocated memory like ```int *p = new int[10]```, it is the programmer's responsibility to deallocate memory when no longer needed. If you didn't deallocate, it will cause **memory leak** <br>
 + C uses the ```malloc()```and ```calloc()``` function to allocate memory dynamically at run times and uses ```free()``` to free dynamically allocated memory.
