@@ -25,7 +25,8 @@ Each byte of memory has an "address". The addresses go from 0 all the way to the
 
 
 ## Stack
-When a new local variables is declared, more stack memory is allocated for that function to store the variables. After the function returns, the stack memory of this function is **deallocated automatically** and all local variables become invalid. There is no guarantee that the value stored in those area will stay the same. A common mistake is to return a pointer to a stack variable in a helper function. After the caller gets this pointer the invalid stack memory can be overwritten at anytime.
+When a new local variables is declared, more stack memory is allocated for that function to store the variables. After the function returns, the stack memory of this function is **deallocated automatically** and all local variables become invalid. There is no guarantee that the value stored in those area will stay the same. <br>
+This code in below is example of this case. It will cause error because In helper function, it returns a pointer to a stack variable which is invalid after this helper function returns.
 ```
 Cube *Createcube()
 {
@@ -41,6 +42,8 @@ int main()
   return 0;
 }
 ```
+## Heap
+To solve this problem, we might use 
 
 
 ## Dynamic Memory Allocation
