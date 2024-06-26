@@ -42,7 +42,20 @@ int main()
 ```
 ## Heap
 To solve this problem, we might return by copy, or put the value at somewhere more permanent than stack memory. Unlike stack memory, heap memory is allocated explicitly by programmers and it won’t be deallocated until it is explicitly freed. To allocate heap memory in C++, use the keyword ```new``` followed by the constructor of what you want to allocate.
+```
+Cube *Createcubeonheap()
+{
+  Cube *c = new Cube(20);
+  return c;
+}
 
+int main()
+{
+  Cube *c = Createcubeonheap();
+  double v = c->getvolume();
+  return (0);
+}
+```
 
 ## Dynamic Memory Allocation
 Dynamic allocated memory is allocated on **Heap**, and non-static and local variables get memory allocated on **Stack**. For normal variables like ```int a```,```char str[10]``` etc, memory is automatically allocated and deallocated. For dynamically allocated memory like ```int *p = new int[10]```, it is the programmer's responsibility to deallocate memory when no longer needed. If you didn't deallocate, it will cause **memory leak** <br>
