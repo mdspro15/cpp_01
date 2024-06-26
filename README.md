@@ -22,8 +22,6 @@ According to this article, each running program has its own memory layout, separ
 
 Each byte of memory has an "address". The addresses go from 0 all the way to the largest possible address. The text, data and heap segments have low address numbers while the stack memory has higher. <br>
 
-
-
 ## Stack
 When a new local variables is declared, more stack memory is allocated for that function to store the variables. After the function returns, the stack memory of this function is **deallocated automatically** and all local variables become invalid. There is no guarantee that the value stored in those area will stay the same. <br>
 This code in below is example of this case. It will cause error because In helper function, it returns a pointer to a stack variable which is invalid after this helper function returns.
@@ -43,7 +41,7 @@ int main()
 }
 ```
 ## Heap
-To solve this problem, we might use 
+To solve this problem, we might return by copy, or put the value at somewhere more permanent than stack memory. Unlike stack memory, heap memory is allocated explicitly by programmers and it won’t be deallocated until it is explicitly freed. To allocate heap memory in C++, use the keyword ```new``` followed by the constructor of what you want to allocate.
 
 
 ## Dynamic Memory Allocation
