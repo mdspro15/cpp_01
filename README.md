@@ -58,6 +58,9 @@ int main()
   return (0);
 }
 ```
+## When to use heap or stack ?
+Use the stack when your variable will not be used after the current function returns <br>
+Use the heap when the data in the variable is needed beyond the lifetime of the current function.
 
 ## Dynamic Memory Allocation
 For dynamically allocated memory like ```int *p = new int[10]```, it is the programmer's responsibility to deallocate memory when no longer needed. If you didn't deallocate, it will cause **memory leak** <br>
@@ -106,6 +109,3 @@ delete[] p;
 ```
 Dynamically allocates memory for 10 integers continuously of type int and returns a pointer to the first element of sequence which is p[0]. <br>
 
-**Heap and Stack** <br>
-Use the stack when your variable will not be used after the current function returns <br>
-Use the heap when the data in the variable is needed beyond the lifetime of the current function.
