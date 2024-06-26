@@ -99,6 +99,10 @@ int main()
 Address: 0x162bc20
 Value: 10
 ```
+# Ex01 Moar brainz!
+We will learn how to create class objects of array on heap. <br>
+We will have to implement following function. <br>
+```Zombie* zombieHorde(int N, std::string name);```
 
 **Allocate a block of memory** <br>
 A new operaor is also used to allocate a block of memory of type data type.
