@@ -67,10 +67,12 @@ For dynamically allocated memory like ```int *p = new int[10]```, it is the prog
 + C uses the ```malloc()```and ```calloc()``` function to allocate memory dynamically at run times and uses ```free()``` to free dynamically allocated memory.
 + C++ uses ```new``` operator to allocate memory and ```delete``` to free memory. <br>
 
-**Syntax to use new and delete operator**
+**Syntax to use new and delete operator** <br>
+We have to assign nullptr to pointer variable after deleting.
 ```
 pointer_valiable = new data_type;
 delete pointer_variable
+pointer_variable = nullptr;
 ```
 Data type could be any built-in date type including array or any user-defined data type such as structure and class. <br>
 **Example**
