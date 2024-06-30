@@ -138,4 +138,8 @@ int &ref = var;
 --> ref is going to be same thing as var, if we print ref, value is same as var which is 7.
     because ref and var are 2 ways to reference this same variable.
 ```
-
+# Ex03 Unnecessary violence
+Implement Weapon class that has
++ A private string attribute **type**
++ A **getType()** member function that returns a const reference to **type**
++ A **setType()** member function that sets **type** using new one passed as parameter
