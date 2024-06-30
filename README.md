@@ -143,3 +143,6 @@ Implement Weapon class that has
 + A private string attribute **type**
 + A **getType()** member function that returns a const reference to **type**
 + A **setType()** member function that sets **type** using new one passed as parameter
+
+Create 2 classes **HumanA** and **HumanB**. They both have **Weapon** and **name**. They also have member function **attack()** that displays
+<name>attacks with their <weapon type>
