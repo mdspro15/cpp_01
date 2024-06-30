@@ -146,6 +146,6 @@ Implement Weapon class that has
 
 Create 2 classes **HumanA** and **HumanB**. 
 + They both have **Weapon** and **name**
-+ They also have member function **attack()** that displays : <name>attacks with their <weapon type>
++ They also have member function **attack()** that displays : *name* attacks with their *weapon type*
 + HumanA takes its Weapon in its constructor but HumanB doesn't
 + HumanB may not always have weapon while HumanA always.
