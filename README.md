@@ -149,3 +149,10 @@ Create 2 classes **HumanA** and **HumanB**.
 + They also have member function **attack()** that displays : *name* attacks with their *weapon type*
 + HumanA takes its Weapon in its constructor but HumanB doesn't
 + HumanB may not always have weapon while HumanA always.
+
+# Ex04 Sed is for losers
++ Create a program that takes 3 parameters. ```filename```, ```s1```, ```s2``` <br>
++ It will open the file <filename> and copy its content to a newfile <filename>.replace <br>
++ Replace every occurence of s1 with s2 <br>
++ We are not allowed to use ```replece()```
+
