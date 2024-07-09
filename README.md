@@ -152,7 +152,7 @@ Create 2 classes **HumanA** and **HumanB**.
 
 # Ex04 Sed is for losers
 + Create a program that takes 3 parameters. ```filename```, ```s1```, ```s2``` <br>
-+ It will open the file <filename> and copy its content to a newfile <filename>.replace <br>
++ It will open the file **filename** and copy its content to a newfile **filename.replace** <br>
 + Replace every occurence of s1 with s2 <br>
 + We are not allowed to use ```replece()```
 
