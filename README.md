@@ -153,6 +153,14 @@ Create 2 classes **HumanA** and **HumanB**.
 + HumanA takes its Weapon in its constructor but HumanB doesn't
 + HumanB may not always have weapon while HumanA always.
 
+# When to use pointer to class
+Use pointer when object can be null. HumanB class where weapon may not be or may present. <br>
+Use pointer when you need to allocate memory on heap. <br>
+# When to use a reference to class
+Use reference when you are sure that the object will never be null. Reference must be initialized cannot be null, <br>
+Passing large object by reference is more efficient than passing by value.<br>
+
+
 # Ex04 Sed is for losers
 + Create a program that takes 3 parameters. ```filename```, ```s1```, ```s2``` <br>
 + It will open the file **filename** and copy its content to a newfile **filename.replace** <br>
