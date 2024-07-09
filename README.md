@@ -142,7 +142,10 @@ int &ref = var;
 Implement Weapon class that has
 + A private string attribute **type**
 + A **getType()** member function that returns a const reference to **type**
-+ A **setType()** member function that sets **type** using new one passed as parameter
++ A **setType()** member function that sets **type** using new one passed as parameter <br>
+
+Return a const reference <br>
+https://youtu.be/RC7uE_wl1Uc 
 
 Create 2 classes **HumanA** and **HumanB**. 
 + They both have **Weapon** and **name**
