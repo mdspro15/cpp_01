@@ -156,3 +156,8 @@ Create 2 classes **HumanA** and **HumanB**.
 + Replace every occurence of s1 with s2 <br>
 + We are not allowed to use ```replece()```
 
+## string.find()
+This is used to find first occurence of sub-string in string and returns index of the first occurence of the sub-string. <br>
+If sub-string is not found it returns string::npos <br>
+
+
