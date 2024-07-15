@@ -167,6 +167,8 @@ Passing large object by reference is more efficient than passing by value.<br>
 + Replace every occurence of s1 with s2 <br>
 + We are not allowed to use ```replece()```
 
+## Handling files
+You will have to learn about file handling in c++. I've used ```ifstream```class to read file and ```ofstream```class to writes to files.
 ## string.find()
 This is used to find first occurence of sub-string in string and returns index of the first occurence of the sub-string. <br>
 If sub-string is not found it returns string::npos <br>
