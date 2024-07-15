@@ -160,7 +160,6 @@ Use pointer when you need to allocate memory on heap. <br>
 Use reference when you are sure that the object will never be null. Reference must be initialized cannot be null, <br>
 Passing large object by reference is more efficient than passing by value.<br>
 
-
 # Ex04 Sed is for losers
 + Create a program that takes 3 parameters. ```filename```, ```s1```, ```s2``` <br>
 + It will open the file **filename** and copy its content to a newfile **filename.replace** <br>
@@ -173,4 +172,7 @@ You will have to learn about file handling in c++. I've used ```ifstream```class
 This is used to find first occurence of sub-string in string and returns index of the first occurence of the sub-string. <br>
 If sub-string is not found it returns string::npos <br>
 
+# Ex05 Harl 2.0
+Create ```Harl```class that contains 4 different private member functions and each function display different messages. On top of this, you will have to implement 1 public member function that calls these 4 member functions depending on **level** which is given as parameter. <br>
+Use ```Pointer to member function``` and don't use chunck of if-else statement !
 
