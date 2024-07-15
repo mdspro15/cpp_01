@@ -176,3 +176,22 @@ If sub-string is not found it returns string::npos <br>
 Create ```Harl```class that contains 4 different private member functions and each function display different messages. On top of this, you will have to implement 1 public member function that calls these 4 member functions depending on **level** which is given as parameter. <br>
 Use ```Pointer to member function``` and don't use chunck of if-else statement !
 
+# Ex06 Harl filter
+This project is similar to previous one but this one has to create program that takes one of levels as parameter. <br>
+You will have to learn about **switch** <br>
+## Switch
+A more efficient alternative to using if-else statement but case value is only integer and char type.
+```
+char grade = 'A';
+switch(grade)
+{
+  case 'A':
+    std::cout << "Perfect!" << std:endl;
+    break; // If we don't put break it will continue to next case.
+  case 'B':
+    std::cout << "You are doing good!" << std:endl;
+    break;
+  default:  //If no other case matches default case will be executed.
+    std::cout << "Invalid input" << std::endl;
+}
+```
